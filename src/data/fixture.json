@@ -1,0 +1,42 @@
+[
+    {
+        "index": 0,
+        "name": "Juliette",
+        "surname": "Garnier",
+        "year_of_study": 5,
+        "hobbies": ["Math", "Dancing", "Science"],
+        "accepted": true
+    },
+    {
+        "index": 1,
+        "name": "Sam",
+        "surname": "Kornell",
+        "year_of_study": 4,
+        "hobbies": ["Drawing", "Singing"],
+        "accepted": true
+    },
+    {
+        "index": 2,
+        "name": "Martin",
+        "surname": "Fourcad",
+        "year_of_study": 4,
+        "hobbies": ["Skiing", "Travel", "Programming"],
+        "accepted": false
+    },
+    {
+        "index": 3,
+        "name": "Walter",
+        "surname": "Mitti",
+        "year_of_study": 3,
+        "hobbies": ["Travel", "Sport", "Piloting", "Relaxation"],
+        "accepted": true
+    },
+    {
+        "index": 4,
+        "name": "Chloe",
+        "surname": "Sullivan",
+        "year_of_study": 4,
+        "hobbies": ["Journalism", "UFO", "Comics"],
+        "accepted": true
+    }
+]

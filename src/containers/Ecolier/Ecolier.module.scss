@@ -1,0 +1,28 @@
+.Ecolier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.NoTags {
+    margin: 0 0.5rem;
+    padding: 5px;
+    background: #ff7f7f75;
+}
+.deleted {
+    animation: ecolier 500ms linear both;
+}
+
+@keyframes ecolier {
+    from {
+        max-height: 100px;
+        transform: scaleY(1);
+        
+    }
+    to {
+        transform: scaleY(0);
+        max-height: 0;
+        margin-bottom: 0;
+    }
+}

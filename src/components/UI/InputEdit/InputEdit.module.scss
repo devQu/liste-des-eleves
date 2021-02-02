@@ -1,0 +1,44 @@
+.InputEdit {
+    border: 2px solid #5969ff;
+    border-radius: 5px;
+    height: 25px;
+    width: 110px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #282c34;
+    color: #fff;
+    // margin: 0 5px;
+}
+.InputEdit:focus {
+    outline: none;
+    box-shadow: 0 0 7px #7f4fdc;
+}
+.InputEdited {
+    background: #556da0;
+}
+.InputBlock {
+    // overflow: hidden;
+    margin: 0 5px;
+}
+.alarmMes {
+    position: absolute;
+    margin: 0 0 0 5px;
+    display: block;
+    background: #ff1f1f8a;
+    font-size: 15px;
+    padding: 0px 7px;
+    border-radius: 5px;
+    z-index: 9;
+}
+.approvMes {
+    position: absolute;
+    margin: 0 0 0 7px;
+    display: block;
+    background: #53ff1fb9;
+    font-size: 15px;
+    padding: 0px 7px;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    z-index: 9;
+}
+

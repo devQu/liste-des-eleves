@@ -1,0 +1,55 @@
+$icon-size: 40px;
+$border-radius: 0.5;
+$font-size: 15px;
+
+$background: #2d2c3e;
+$background-b: #2d2c3e;
+
+// Icon Colors
+$red: #C82647;
+
+// Text
+$white: #fff;
+
+.Icon{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: $icon-size;
+  height: $icon-size;
+  margin-left: $icon-size/5;
+  margin-right: $icon-size/5;
+  border-radius: $icon-size*$border-radius;
+  overflow: hidden;
+  &::before, &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: $icon-size*$border-radius;
+  }
+  i{
+    position: relative;
+    color: #FFFFFF;
+    font-size: $font-size;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: all 0.25s ease;
+  }
+  &::after{
+    box-shadow: inset 0 0 0 2px $red;
+  }
+  &::before{
+    background: $red;
+    box-shadow: inset 0 0 0 $icon-size $background;
+  }
+  &:hover::before{
+    box-shadow: inset 0 0 0 1px $background;
+  }
+}

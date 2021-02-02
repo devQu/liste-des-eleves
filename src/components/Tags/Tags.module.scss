@@ -1,0 +1,15 @@
+.TagList {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.Tag {
+    list-style-type: none;
+    display: inline;
+    padding: 1px 5px;
+    background: #737373;
+    border-radius: 10px;
+    margin: 0 7px;
+    cursor: pointer;
+}

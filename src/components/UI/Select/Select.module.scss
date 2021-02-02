@@ -1,0 +1,17 @@
+.SelectBlock {
+    display: flex;
+    flex-direction: column;
+    margin: -24px 0 0 2px;
+}
+.Select {
+    background: #556da0;
+    color: #fff;
+    outline: none;
+    border: 2px solid #5969ff;
+    border-radius: 5px;
+    min-height: 31px;
+}
+.Label {
+    padding-bottom: 3px;
+    font-weight: 600;
+}
