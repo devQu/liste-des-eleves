@@ -7,7 +7,6 @@
     font-weight: 600;
     background: #282c34;
     color: #fff;
-    // margin: 0 5px;
 }
 .InputEdit:focus {
     outline: none;
@@ -17,8 +16,14 @@
     background: #556da0;
 }
 .InputBlock {
-    // overflow: hidden;
     margin: 0 5px;
+}
+.InputError {
+    background: #ad4646;
+    border: 2px solid #c13f3f;
+    &:focus {
+        box-shadow: 0 0 7px #c13f3f;
+    }
 }
 .alarmMes {
     position: absolute;

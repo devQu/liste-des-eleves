@@ -30,8 +30,6 @@ export const CreateProvider = ({ children }) => {
         if (field === "surname") {setValidSurname(ifValid)}
     }
 
-    // useEffect(() => {console.log("name, surname: ", validName, validSurname)}, [validName, validSurname])
-
     return (
         <CreateContext.Provider value={{
             validName, validSurname,

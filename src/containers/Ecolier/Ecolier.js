@@ -3,7 +3,7 @@ import classes from './Ecolier.module.scss'
 import ButtonDelete from "../../components/UI/ButtonDelete/ButtonDelete"
 import InputEdit from "../../components/UI/InputEdit/InputEdit"
 import Label from "../../components/UI/Label/Label"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Checkbox from "../../components/UI/Checkbox/Checkbox"
 import { connect } from "react-redux"
 import { onDeleteTag } from "../../store/actions/eleves"
@@ -25,17 +25,38 @@ const Ecolier = props => {
     const inputData = {
         required: true, // Option if the field is required
         min3: true, // Option if the minimum field length is specified
-        change: true // Field change option
+        validChars: true, // Option for symbol validation 
+        change: true, // Field change option
+        index: props.index 
     }
 
     return (
         <div className={cls.join(' ')}>
-            <Checkbox index={props.index} accepted={props.accepted} />
-            <InputEdit onChange={onHandleName} index={props.index} {...inputData} value={name} field="name" />
-            <InputEdit onChange={onHandleSurname} index={props.index} {...inputData} value={surname} field="surname" /> 
-            <Label label={props.years} />  
+            <Checkbox 
+                index={props.index} 
+                accepted={props.accepted} 
+            />
+            <InputEdit 
+                onChange={onHandleName} 
+                {...inputData} 
+                value={name} 
+                field="name" 
+            />
+            <InputEdit 
+                onChange={onHandleSurname} 
+                {...inputData} 
+                value={surname} 
+                field="surname" 
+            /> 
+            <Label 
+                label={props.years} 
+            />  
             { !!props.hobbies.length ?
-                <Tags hobbies={props.hobbies} index={props.index} onDeleteTag={props.onDeleteTag} /> :
+                <Tags 
+                    hobbies={props.hobbies} 
+                    index={props.index} 
+                    onDeleteTag={props.onDeleteTag} 
+                /> :
                 <div className={classes.NoTags}>Intérêts non spécifiés</div>
             }
             <ButtonDelete index={props.index} setAnim={setAnim} delAnim={delAnim} />

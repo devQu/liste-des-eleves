@@ -12,6 +12,7 @@ const CreateEcolier = props => {
     const inputData = {
         required: true, // Option if the field is required
         min3: true, // Option if the minimum field length is specified
+        validChars: true, // Option for symbol validation 
         change: false // If the field value changes
     }
 
@@ -33,8 +34,8 @@ const CreateEcolier = props => {
             setTag('')
             setTags([])
             setYear(1)
-            toggleValidInputs('name')
-            toggleValidInputs('surname')
+            toggleValidInputs('name', false)
+            toggleValidInputs('surname', false)
         }
     }
 
