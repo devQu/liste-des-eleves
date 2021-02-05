@@ -44,7 +44,7 @@ export function onAddEcolier({ name, surname, year, tags }) {
     return (dispatch, getState) => {
         const eleves = getState().elevesReducer.eleves.concat()
         const eleve = {
-            index: Math.random().toString().substr(3, 6),
+            index: parseInt(Math.random().toString().substr(3, 6)),
             accepted: true,
             year_of_study: year,
             hobbies: tags,
@@ -62,23 +62,3 @@ export function saveListEleves(eleves) {
         eleves
     }
 }
-
-// export function onValidInput(isValid, field) {
-//     return dispatch => {
-//         dispatch(onValidNameField(isValid))
-//     }
-// }
-
-// export function onValidNameField(isValid) {
-//     return {
-//         type: CHANGE_VALID_STATUS_NAME,
-//         isValid
-//     }
-// }
-
-// export function onValidSurnameField(isValid) {
-//     return {
-//         type: CHANGE_VALID_STATUS_SURNAME,
-//         isValid
-//     }
-// }
